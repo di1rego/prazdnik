@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздник в каждый дом</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Главная страница - Landing Page – index.html -->
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-w">
+                <a href="index.html"><img src="img/logo.PNG" alt="logo" class="logo"></a>
+                <ul class="menu__box">
+                    <li><a href="index.html" class="menu__item menu__item_active">Акции</a></li>
+                    <li><a href="search.html" class="menu__item">Поиск</a></li>
+                    <li><a href="booking.html" class="menu__item">Управление бронированием</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Алгоритм бронирования -->
+    <section class="algo">
+        <div class="container">
+            <div class="algo-w">
+                <div class="algo__info">
+                    <h2><img src="img/icons/calendar-outline.svg" alt=""> 1. Выбрать даты праздника</h2>
+                    <h2><img src="img/icons/people-outline.svg" alt=""> 2. Выбрать количество участников</h2>
+                    <h2><img src="img/icons/add-circle-outline.svg" alt=""> 3. Выбрать желаемую локацию для праздника,
+                        соответствующую условиям выше</h2>
+                    <h2><img src="img/icons/heart-outline.svg" alt=""> 4. Зарезервировать конкретную зону на территории
+                        выбранной локации</h2>
+                    <h2><img src="img/icons/home-outline.svg" alt=""> 5. Определить перечень дополнительных услуг</h2>
+                    <h2><img src="img/icons/bag-check-outline.svg" alt=""> 6. Оформить заказ.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Информация о компании -->
+    <section class="company">
+        <div class="container">
+            <div class="company-w w">
+                <h2 class="title">О компании</h2>
+                <p>У нас есть множество красочных локаций, в которых можно организовать праздник любой сложности и
+                    размаха! У нас есть волшебная палочка - это любовь к детям! С её помощью мы уже 7 лет исполняем
+                    детские мечты, создавая для них добрые праздники. В нашем арсенале есть большой выбор развлечений
+                    для детей - самые модные квесты, дискотеки, и различные программы Чудесного путешествия по Стране
+                    Волшебников! Надеемся на скорую встречу с вами!</p>
+                <h2 class="title">Цель</h2>
+                <p>Главная цель компании – сделать дни вынужденной самоизоляции максимально комфортными и безопасными
+                    для клиентов. </p>
+                <h2 class="title">Девиз</h2>
+                <p>Девиз компании «Праздник в каждый дом»: Подарим волшебство для Ваших детей!</p>
+                <h2 class="title">Отзывы клиентов</h2>
+                <div class="reviews">
+                    <div class="reviews__block">
+                        <img src="img/reviews/1.PNG" alt="pic">
+                        <h3>Марина Александровна</h3>
+                        <p>Игры хорошие, аниматоры отличные, костюмы классные!</p>
+                    </div>
+                    <div class="reviews__block">
+                        <img src="img/reviews/2.PNG" alt="pic">
+                        <h3>Алена Сергеевна</h3>
+                        <p>Аниматоры молодцы, все очень хорошо подготовили!</p>
+                    </div>
+                    <div class="reviews__block">
+                        <img src="img/reviews/3.PNG" alt="pic">
+                        <h3>Наталия Павловна</h3>
+                        <p>Уже не первый раз заказываем праздник у вас, все супер!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Форма поиска -->
+    <div class="formSearch">
+        <div class="container">
+            <div class="formSearch-w w">
+                <h2 class="title">Форма поиска</h2>
+                <div class="formSearch__grid">
+                    <form action="booking.html" method="get">
+                        <label for="formSearch">Выбор региона:</label>
+                        <select name="option" id="formSearch">
+                            <option value="formSearch">Республика Татарстан</option>
+                            <option value="formSearch">Коми</option>
+                            <option value="formSearch">Бурятия</option>
+                        </select>
+
+                        <label for="formSearch">Дата заселения:</label>
+                        <input type="datetime-local" name="input" id="formSearch">
+
+                        <label for="formSearch">Дата выселения:</label>
+                        <input type="datetime-local" name="input" id="formSearch">
+
+                        <label for="formSearch">Количество взрослых и детей:</label>
+                        <input type="number" name="input" id="formSearch" min="0" max="50"
+                            placeholder="(не более 50 детей и взрослых)">
+
+                        <button type="submit">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Акции -->
+    <section class="promotions">
+        <div class="container">
+            <div class="promotions-w w">
+                <h2 class="title">Акции</h2>
+                <div class="promotions__grid">
+                    <div class="promotions__block">
+                        <img src="img/promotions/promotion1.jpg" alt="image">
+                        <div class="promotions__info">
+                            <p><b>Туристическая база "Озеро Красилово"</b><br> Косихинский район, с. Озеро-Красилово,
+                                ул.
+                                Пушкина д.1</p><br>
+                            <form action="seat.html" method="get">
+                                <button>Подробнее</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="promotions__block">
+                        <img src="img/promotions/promotion2.jpg" alt="image">
+                        <div class="promotions__info">
+                            <div class="promotions__info">
+                                <p><b>Парк-отель "Чайка"</b><br> Ачинский район, с. Ключи, Пионерская долина, 5</p><br>
+                                <form action="seat.html" method="get">
+                                    <button>Подробнее</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promotions__block">
+                        <img src="img/promotions/promotion3.jpg" alt="image">
+                        <div class="promotions__info">
+                            <p><b>Парк-отель "Чайка"</b><br> Ачинский район, с. Ключи, Пионерская долина, 5</p><br>
+                            <form action="seat.html" method="get">
+                                <button>Подробнее</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Форма для подписки на закрытые акции -->
+    <section class="subscription" id="subscription">
+        <div class="container">
+            <h2 class="title">Подписаться на закрытые акции</h2>
+            <div class="subscription-w w">
+                <form action="#" method="get" class="subscribe">
+                    <input type="email" name="subscribe-txt" id="subscribe" placeholder="Введите ваш E-mail">
+                    <button type="submit" value="subscribe">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <hr style="margin-bottom: 30px;">
+            <div class="footer-w w">
+                <h2>Телефон: <a href="tel:+78001112020" class="phone">8 (800) 111-20-20</a> <br>
+                    <a href="index.html">Возврат</a> <br>
+                    <a href="#subscription">Обратная связь</a>
+                </h2>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

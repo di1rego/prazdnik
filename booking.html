@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздник в каждый дом</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Страница бронирования -->
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-w">
+                <a href="index.html"><img src="img/logo.PNG" alt="logo" class="logo"></a>
+                <ul class="menu__box">
+                    <li><a href="index.html" class="menu__item">Акции</a></li>
+                    <li><a href="search.html" class="menu__item">Поиск</a></li>
+                    <li><a href="booking.html" class="menu__item menu__item_active">Управление бронированием</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="formSearch">
+        <div class="container">
+            <div class="formSearch-w w">
+                <h2 class="title">Сбор данных</h2>
+                <div class="formSearch__grid">
+                    <form action="booking.html" method="get">
+                        <h2 class="title2">Данные о заказе</h2>
+                        <label for="formSearch">Регион:</label>
+                        <select name="option" id="formSearch">
+                            <option value="formSearch">Республика Татарстан</option>
+                            <option value="formSearch">Коми</option>
+                            <option value="formSearch">Бурятия</option>
+                        </select>
+
+                        <label for="formSearch">Адрес локации:</label>
+                        <input type="text" name="txt" id="formSearch">
+
+                        <label for="formSearch">Дата мероприятия:</label>
+                        <input type="datetime-local" name="input" id="formSearch">
+
+                        <label for="formSearch">Количество человек:</label>
+                        <input type="number" name="input" id="formSearch" min="0" max="50"
+                            placeholder="(не более 50 детей и взрослых)">
+
+                        <label for="formSearch">Стоимость:</label>
+                        <input type="number" name="number" id="formSearch" placeholder="0 р.">
+
+                        <h2 class="title2">Выбор дополнительных услуг</h2>
+                        <select name="select" id="formSearch">
+                            <option value="formSearch">Организация питания</option>
+                            <option value="formSearch">Услуги аниматоров</option>
+                            <option value="formSearch">Услуги ведущего</option>
+                            <option value="formSearch">Услуги детского такси</option>
+                        </select>
+
+                        <label for="formSearch">Поле для ввода email заказчика:</label>
+                        <input type="email" name="formSearch" id="formSearch" placeholder="Введите ваш e-mail">
+
+                        <label for="formSearch">Итогавая стоимость:</label>
+                        <input type="number" name="number" id="formSearch" placeholder="0 р.">
+
+                        <button type="submit">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
